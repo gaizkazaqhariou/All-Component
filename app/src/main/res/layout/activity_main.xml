@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_book_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="INI BIODATA"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <RelativeLayout
+                android:id="@+id/rContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Nama : "
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rContainer"
+                    android:layout_toRightOf="@+id/textNama"
+                    tools:ignore="NotSibling" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rContainer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Alamat : "
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rContainer4"
+                    android:layout_toRightOf="@+id/textAlamat"
+                    tools:ignore="NotSibling" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rContainer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Nomer HP : "
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rContainer5"
+                    android:layout_toRightOf="@+id/textNo"
+                    tools:ignore="NotSibling" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Jenis Kelamin : "
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/JK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="laki laki" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textHobi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hobi : "
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/rContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cBaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rContainer"
+                    android:layout_toRightOf="@+id/textHobi"
+                    android:text="Membaca"
+                    tools:ignore="NotSibling" />
+
+                <CheckBox
+                    android:id="@+id/cTulis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rContainer"
+                    android:layout_toRightOf="@+id/cBaca"
+                    android:text="Menulis"
+                    tools:ignore="NotSibling" />
+
+                <CheckBox
+                    android:id="@+id/cHitung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rContainer"
+                    android:layout_toRightOf="@+id/cTulis"
+                    android:text="Berhitung"
+                    tools:ignore="NotSibling" />
+
+                <CheckBox
+                    android:id="@+id/cTidur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rContainer"
+                    android:layout_toRightOf="@+id/cHitung"
+                    android:text="Tidur"
+                    tools:ignore="NotSibling" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Birth Day :"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/rContainer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/sTanggal"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:entries="@array/tanggal" />
+
+                <Spinner
+                    android:id="@+id/sBulan"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/textDate"
+                    android:layout_toRightOf="@+id/sTanggal"
+                    android:entries="@array/bulan"
+                    tools:ignore="NotSibling" />
+
+                <Spinner
+                    android:id="@+id/sTahun"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/textDate"
+                    android:layout_toRightOf="@+id/sBulan"
+                    android:entries="@array/tahun"
+                    tools:ignore="NotSibling" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rContainer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Switch
+                    android:id="@+id/sSD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Lulus SD ?  " />
+
+                <Switch
+                    android:id="@+id/sSMP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rContainer6"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/sSD"
+                    android:text="Lulus SMP ?  "
+                    tools:ignore="NotSibling" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rContainer6"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/sSMP"
+                    android:text="Lulus SMA ?"
+                    tools:ignore="NotSibling" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
