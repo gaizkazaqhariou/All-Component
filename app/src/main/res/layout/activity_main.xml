@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         tools:ignore="MissingConstraints">
@@ -93,6 +93,7 @@
                     android:layout_height="50dp"
                     android:layout_below="@+id/rContainer5"
                     android:layout_toRightOf="@+id/textNo"
+                    android:inputType="number"
                     tools:ignore="NotSibling" />
 
             </RelativeLayout>
@@ -192,11 +193,12 @@
                     android:id="@+id/sTanggal"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
                     android:entries="@array/tanggal" />
 
                 <Spinner
                     android:id="@+id/sBulan"
-                    android:layout_width="200dp"
+                    android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_below="@+id/textDate"
                     android:layout_toRightOf="@+id/sTanggal"
@@ -225,7 +227,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="Lulus SD ?  " />
+                    android:text="Lulus \nSD ?  " />
 
                 <Switch
                     android:id="@+id/sSMP"
@@ -234,7 +236,7 @@
                     android:layout_below="@+id/rContainer6"
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@+id/sSD"
-                    android:text="Lulus SMP ?  "
+                    android:text="Lulus \nSMP ?  "
                     tools:ignore="NotSibling" />
 
                 <Switch
@@ -243,7 +245,7 @@
                     android:layout_below="@+id/rContainer6"
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@+id/sSMP"
-                    android:text="Lulus SMA ?"
+                    android:text="Lulus \nSMA ?"
                     tools:ignore="NotSibling" />
 
             </RelativeLayout>
@@ -259,8 +261,10 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
                 android:text="Ini Button"
-                android:textColor="?attr/colorAccent" />
+                android:background="#0d6921"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
